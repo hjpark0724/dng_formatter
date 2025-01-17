@@ -211,7 +211,6 @@ TIFF *TIFFFdOpenExt(int fd, const char *name, const char *mode,
                     TIFFOpenOptions *opts)
 {
     TIFF *tif;
-
     fd_as_handle_union_t fdh;
     fdh.fd = fd;
     tif = TIFFClientOpenExt(name, mode, fdh.h, _tiffReadProc, _tiffWriteProc,

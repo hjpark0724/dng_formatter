@@ -6,8 +6,24 @@ set(CMAKE_C_STANDARD 11)
 set(SOURCES
         libtiff/libtiff/tif_warning.c
         libtiff/libtiff/tif_error.c
+        libtiff/libtiff/tif_aux.c
+        libtiff/libtiff/tif_hash_set.c
+        libtiff/libtiff/tif_dir.c
+        libtiff/libtiff/tif_dirinfo.c
+        libtiff/libtiff/tif_dirread.c
+        libtiff/libtiff/tif_dirwrite.c
+        libtiff/libtiff/tif_tile.c
+        libtiff/libtiff/tif_swab.c
+        libtiff/libtiff/tif_codec.c
+        libtiff/libtiff/tif_compress.c
+        libtiff/libtiff/tif_dumpmode.c
+        libtiff/libtiff/tif_strip.c
         libtiff/libtiff/tif_unix.c
-
+        libtiff/libtiff/tif_open.c
+        libtiff/libtiff/tif_close.c
+        libtiff/libtiff/tif_read.c
+        libtiff/libtiff/tif_write.c
+        libtiff/libtiff/tif_flush.c
 )
 
 include_directories(${CMAKE_SOURCE_DIR}/libtiff)
